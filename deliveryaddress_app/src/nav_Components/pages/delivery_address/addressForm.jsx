@@ -109,7 +109,7 @@ export default function AddressForm(props) {
         else {
             // setDeliveryList([...deliverList, addressFormData]);
             copyDeliveryList.push(addressFormData);
-            if (addressFormData.isdefault_add) {
+            if (addressFormData.isdefault_add){
                 var newAddedAddress = copyDeliveryList.map((data) => {
                     if (copyDeliveryList[copyDeliveryList.length - 1].id === data.id) {
                         return { ...data, isdefault_add: true };
